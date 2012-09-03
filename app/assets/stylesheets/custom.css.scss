@@ -148,7 +148,9 @@ aside {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], [type="datetime-local"],
+input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"],
+input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   padding: 10px;
@@ -156,6 +158,8 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
+
+
 
 #error_explanation {
   color: #f00;
